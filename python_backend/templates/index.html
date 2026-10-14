@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7fb" />
+    <title>الخطة | متابعة الجودة والإنتاج</title>
+    <!-- Relative links for both Flask and GitHub Pages -->
+    <link rel="stylesheet" href="styles.css" onerror="this.onerror=null;this.href='static/styles.css';" />
+  </head>
+  <body>
+    <div id="app">
+      <div style="font-family: Tahoma, Arial, sans-serif; display: flex; min-height: 100vh; align-items: center; justify-content: center; background: #f5f7fb; color: #172033; text-align: center; padding: 20px;">
+        <div style="background: #fff; padding: 32px 24px; border-radius: 18px; border: 1px solid #e8ebf2; max-width: 440px; box-shadow: 0 15px 40px rgba(0,0,0,0.06);">
+          <div style="width: 48px; height: 48px; margin: 0 auto 16px; border-radius: 14px; background: linear-gradient(145deg,#827bff,#5148d9); color: #fff; font-size: 26px; font-weight: bold; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 16px rgba(81,72,217,0.35);">خ</div>
+          <h2 style="margin: 0 0 8px; font-size: 19px; color: #172033;">الخطة | متابعة الجودة والإنتاج</h2>
+          <p style="color: #768198; font-size: 13px; line-height: 1.6; margin: 0 0 16px;">جارٍ تحميل النظام وتهيئة البيانات...</p>
+          <div style="font-size: 11px; color: #9aa2b2; background: #f8fafc; padding: 8px 12px; border-radius: 8px;">إذا استمر التحميل، تأكد من رفع ملفات المشروع واستدعاء السيرفر.</div>
+        </div>
+      </div>
+    </div>
+    <!-- Smart Script Loader: checks app.js then static/app.js -->
+    <script>
+      (function() {
+        var s = document.createElement('script');
+        s.src = 'app.js';
+        s.onerror = function() {
+          var s2 = document.createElement('script');
+          s2.src = 'static/app.js';
+          document.body.appendChild(s2);
+        };
+        document.body.appendChild(s);
+      })();
+    </script>
+  </body>
+</html>
