@@ -1,0 +1,6 @@
+{
+  "name": "الخطة | متابعة الجودة والإنتاج",
+  "description": "نظام متابعة مهام تصوير الدروس وإنتاج الملخصات التعليمية لفرق الجودة والداتا إنتري مع دعم الرفع لـ PythonAnywhere",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
